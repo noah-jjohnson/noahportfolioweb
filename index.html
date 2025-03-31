@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>[Your Name] - Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Font Awesome for icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+  />
+</head>
+<body>
+  <!-- Navigation/Header -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#projects">My Projects</a></li>
+        <li><a href="#links">Links</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home" class="section-dark">
+    <div class="hero container">
+      <h1>Welcome to My Portfolio</h1>
+      <p>A showcase of my finance projects and creative work.</p>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about" class="section-light">
+    <div class="container">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <!-- Replace "your-photo.jpg" with your actual photo file -->
+        <img src="your-photo.jpg" alt="Your Photo" />
+        <p>
+          Hello, I'm [Your Name]. I’m a finance professional with a passion for analytical insights, innovative problem solving, and creative project design. With expertise ranging from policy briefs to VC decks, I bring a unique perspective to every project.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- My Projects Section -->
+  <section id="projects" class="section-dark">
+    <div class="container">
+      <h2>My Projects</h2>
+      <div class="projects-grid">
+        <!-- Project Card 1 -->
+        <div class="project-card" data-modal="modal1">
+          <h3>Project One</h3>
+          <p>Brief description of Project One.</p>
+        </div>
+        <!-- Project Card 2 -->
+        <div class="project-card" data-modal="modal2">
+          <h3>Project Two</h3>
+          <p>Brief description of Project Two.</p>
+        </div>
+        <!-- Add more project cards as needed -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal for Project One -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>Project One</h3>
+      <p>
+        Detailed description of Project One. You can include any information you’d like recruiters to know, as well as links to downloadable files or live previews.
+      </p>
+      <a href="https://example.com/project1" target="_blank" class="modal-link">View Project</a>
+    </div>
+  </div>
+
+  <!-- Modal for Project Two -->
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>Project Two</h3>
+      <p>
+        Detailed description of Project Two. This section can include additional images, documents, or external links.
+      </p>
+      <a href="https://example.com/project2" target="_blank" class="modal-link">View Project</a>
+    </div>
+  </div>
+
+  <!-- Links Section -->
+  <section id="links" class="section-light">
+    <div class="container">
+      <h2>Links</h2>
+      <div class="links">
+        <a href="https://www.linkedin.com/in/yourprofile" target="_blank">
+          <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+        <a href="https://github.com/yourprofile" target="_blank">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+        <!-- Add additional links here -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section-dark">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>If you'd like to get in touch, please send a message below.</p>
+      <form action="your-backend-endpoint" method="post">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="section-light">
+    <div class="container">
+      <p>&copy; 2025 [Your Name]. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
